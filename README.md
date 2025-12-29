@@ -51,7 +51,7 @@ GitHub倉庫裡的圖片, 與上面的格式基本一致的，所不同的就是
 <br>
 範例 : `https://raw.githubusercontent.com/DavidPeng1/DavidPeng1.github.io/main/Build%20School%20Logo.webp`
 <br>
-![](https://raw.githubusercontent.com/AWEN-0719/DavidPeng1.github.io/main/Build%20School%20Logo.webp "Bulid School Logo")
+![](https://raw.githubusercontent.com/AWEN-0719/AWEN-0719.github.io/main/Build%20School%20Logo.webp "Bulid School Logo")
 <br>
 插入程式碼的方法, 在`開頭處加入``` + 語言別, 如html= + 程式碼 + 結尾處也需要```的符號`
 
