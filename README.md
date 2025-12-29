@@ -28,13 +28,13 @@ README.md 的編寫方式說明
 <br>
 顯示結果如下
 <br>
-[我在 GitHub 上的清單](https://DavidPeng1.github.io)
+[我在 GitHub 上的清單](https://AWEN-0719.github.io)
 <br>
 還可以在滑鼠停在超連結文字時, 出現提示文字, 例如要顯示作業的結果。
 <br>
 範例 : `[我在 GitHub 上的清單](https://DavidPeng1.github.io "Bulid School 作業清單")`
 <br>
-[我在 GitHub 上的清單](https://DavidPeng1.github.io "Bulid School 作業清單")
+[我在 GitHub 上的清單](https://AWEN-0719.github.io "Bulid School 作業清單")
 
 
 插入圖片
@@ -51,7 +51,7 @@ GitHub倉庫裡的圖片, 與上面的格式基本一致的，所不同的就是
 <br>
 範例 : `https://raw.githubusercontent.com/DavidPeng1/DavidPeng1.github.io/main/Build%20School%20Logo.webp`
 <br>
-![](https://raw.githubusercontent.com/DavidPeng1/DavidPeng1.github.io/main/Build%20School%20Logo.webp "Bulid School Logo")
+![](https://raw.githubusercontent.com/AWEN-0719/DavidPeng1.github.io/main/Build%20School%20Logo.webp "Bulid School Logo")
 <br>
 插入程式碼的方法, 在`開頭處加入``` + 語言別, 如html= + 程式碼 + 結尾處也需要```的符號`
 
