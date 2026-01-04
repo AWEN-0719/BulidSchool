@@ -1,7 +1,8 @@
-正在持續學習前端（HTML / JavaScript）與 Java 後端基礎。
-
-## 學習方向
+## 複習學校所學的方向
 - HTML / CSS / JavaScript
 - Java
 - SQL
 - ASP.NET MVC
+
+### 持續學習 C 語言基礎
+### 計劃取得 JAVA 的證照 
