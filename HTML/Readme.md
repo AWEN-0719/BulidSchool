@@ -1,8 +1,8 @@
-# 練習清單
+# 練習成果展示
 ==================================================
 
 <br>[練習01 表單表格練習](https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html)
-
+[練習01 心得] (https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01.md)
 
 
 
