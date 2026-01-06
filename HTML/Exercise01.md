@@ -6,7 +6,7 @@
 - 遇到重複內容 → 使用 rowspan
 - 遇到共用內容 → 使用 colspan
 
-### 熟悉 <table> 的語意分區
+### 熟悉 (<table>) 的語意分區
 ```
 <table>
   <caption></caption>
