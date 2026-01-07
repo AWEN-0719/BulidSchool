@@ -2,8 +2,9 @@
 ==================================================
 
 
-|練習項次|練習題目|練習筆記|
-|-------|-------|-------|
+|練習項次|點擊練習題目可展示作品|點擊練習筆記可查看內容|
+|---------|---------|---------|
+| 練習01 |<br>[練習01 表單表格練習] (https://awen-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html)|<br>[練習01 筆記] (https://github.com/AWEN-0719/Practicing_HTML/blob/main/HTML/Exercise01.md)|
 
 <br>[練習01 表單表格練習] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html))
 <br>[練習01 筆記] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01.md](https://github.com/AWEN-0719/Practicing_HTML/blob/main/HTML/Exercise01.md))
