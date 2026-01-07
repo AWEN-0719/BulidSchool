@@ -5,6 +5,7 @@
 
 ## 練習概要
 |練習|範圍|技術|學習心得|
+|----|----|----|----|
 |練習01|HTML基礎結構|HTML|語意結構與標籤用途|
 |練習02|表格練習|table/colspan/rowspan|格線思維|
 |練習03|Position版型|position/flexbox|重疊與交錯|
