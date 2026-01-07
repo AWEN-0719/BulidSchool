@@ -26,9 +26,6 @@
 ---
 
 
-<br>[作業06 SHOPLINE - Bootstrap 練習 RWD](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW06/HW06.html)
-<br>[作業07 Bootstrap 練習](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW07/HW07_BS.html)
-
 
 
 <br>[作業05 簡介 - JavaScript 練習](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW05/HW05.html)
