@@ -13,7 +13,7 @@
 
 ### 練習中學習與使用到的技術
 - HTML5
-- CSS3
+- CSS
 - Flexbox
 - reset.css（清除瀏覽器預設樣式）
 - Font Awesome（圖示字型）
