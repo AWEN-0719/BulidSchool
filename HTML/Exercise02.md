@@ -12,7 +12,7 @@
 寫得清楚，比較重要
 
 ### 練習中學習與使用到的技術
-- HTML5
+- HTML
 - CSS
 - Flexbox
 - reset.css（清除瀏覽器預設樣式）
