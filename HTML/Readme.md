@@ -1,9 +1,9 @@
 # 練習成果展示與筆記
 ==================================================
 
-<br>[練習01 表單表格練習] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html)l
+<br>[練習01 表單表格練習] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html))
 <br>[練習01 筆記] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01.md](https://github.com/AWEN-0719/Practicing_HTML/blob/main/HTML/Exercise01.md))
-<br>[練習02 SHOPLINE 網頁樣式練習復刻]([tps://awen-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html))
+<br>[練習02 SHOPLINE 網頁樣式練習復刻]([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html))
 
 
 
