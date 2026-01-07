@@ -28,7 +28,7 @@
 
 
 
-<br>[作業05 簡介 - JavaScript 練習](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW05/HW05.html)
+
 <br>[作業08 寶可夢圖鑑列表 - JavaScript 練習 網路抓圖列表](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW08/Pokemon_List.html)
 <br>[作業09 英雄聯盟 - JavaScript 練習 以文字迭代英雄人物資料](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW09/LOL_CardStatic_text.html)
 <br>[作業10 雷達分佈圖與表格  - JavaScript 練習](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW10/HW-MarketingShare.html)
