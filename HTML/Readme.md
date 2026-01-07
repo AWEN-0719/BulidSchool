@@ -3,8 +3,8 @@
 
 <br>[練習01 表單表格練習] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise01/index.html))
 <br>[練習01 筆記] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise01.md](https://github.com/AWEN-0719/Practicing_HTML/blob/main/HTML/Exercise01.md))
-<br>[練習02 SHOPLINE 網頁樣式練習復刻] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html))
-
+<br>[練習02 SHOPLINE 網頁樣式 - 練習復刻] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html](https://awen-0719.github.io/Practicing_HTML//HTML/Exercise02/index.html))
+<br>[練習02 筆記] ([https://AWEN-0719.github.io/Practicing_HTML//HTML/Exercise02.md](https://github.com/AWEN-0719/Practicing_HTML/blob/main/HTML/Exercise02.md))
 
 
 <br>[作業03 TOYOTA - CSS 練習 Position](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW03/HW03.html)
