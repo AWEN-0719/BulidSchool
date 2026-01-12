@@ -1,89 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- 宣告文件型態為 HTML5 -->
+<html lang="en"> <!-- 網頁開始，設定語言為英文 -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> <!-- 網頁的設定區（不顯示在畫面上） -->
+    <meta charset="UTF-8"> <!-- 設定網頁編碼為 UTF-8，支援中文 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 指定使用最新的 IE 瀏覽器模式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 響應式設計，適合手機與桌機 -->
 
-    <title>JavaScript 練習 網路抓寶可夢圖鑑列表與遞增遞減</title>
-
+    <title> 練習 JavaScript + DOM 操作 + 迴圈 </title> <!-- 瀏覽器分頁標題 -->
 </head>
 
-<body>
+<body> <!-- 網頁主要顯示內容開始 -->
 
-    <h1>JavaScript 練習 網路抓寶可夢圖鑑列表與遞增遞減</h1>
+    <h1> 練習 JavaScript + DOM 操作 + 迴圈 </h1>
+        <h2> 網路抓寶可夢圖鑑列表與遞增遞減 </h2>
 
-    <!-- button id 的名稱 使用單引號或雙引號都可以 -->
-    <button id='loadall' onclick="allPokemon()">Load All</button>
-    <button id='addone' onclick="AddPokemon()">Click +1</button>
-    <button id='removeone' onclick="removePokemon()">Click -1</button>
-    <button id='reset' onclick="resetPokemon()">Reset</button>
+    <!-- 建立按鈕，點擊後呼叫對應的 JavaScript 函式 -->
+    <button id='loadall' onclick="allPokemon()">Load All</button> <!-- 載入全部寶可夢 -->
+    <button id='addone' onclick="AddPokemon()">Click +1</button> <!-- 新增一隻寶可夢 -->
+    <button id='removeone' onclick="removePokemon()">Click -1</button> <!-- 移除最後一隻寶可夢 -->
+    <button id='reset' onclick="resetPokemon()">Reset</button> <!-- 清空所有寶可夢 -->
 
-    <div id="container">
-
-
-
+    <div id="container"> <!-- 用來存放寶可夢圖片的容器 -->
     </div>
 
+    <script> <!-- JavaScript 程式碼開始 -->
 
-    <script>
-        let container;
-        let i = 1;
-        window.onload = function () {
-            container = document.getElementById("container");
+        let container; // 宣告變數 container，用來存放 div 容器
+        let i = 1; // 宣告變數 i，作為計數使用（初始值為 1）
+
+        window.onload = function () { // 當整個網頁載入完成後執行
+            container = document.getElementById("container"); // 取得 id 為 container 的元素
         }
 
-        function appendPokemon() {
-            let img = document.createElement("img");
-            img.setAttribute("src","https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png");
-            container.appendChild(img);
-        }
+        function appendPokemon() { // 宣告 appendPokemon 函式
+            let img = document.createElement("img"); // 建立一個 img 圖片元素
+            img.setAttribute(
+                "src",
+                "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+            ); // 設定圖片來源為 001 號寶可夢
+            container.appendChild(img); // 將圖片加入 container 容器中
+        } // 函式結束
 
-        function appendPokemonByTemplate() {
-            let fileName = "001";
-            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
-            let pokemonImg = `<img src="${pathFile}">`;
-            container.innerHTML = pokemonImg;
-        }
+        function appendPokemonByTemplate() { // 宣告 appendPokemonByTemplate 函式
+            let fileName = "001"; // 宣告圖片檔名
+            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`; // 組合圖片路徑
+            let pokemonImg = `<img src="${pathFile}">`; // 使用樣板字串建立 img HTML
+            container.innerHTML = pokemonImg; // 將圖片 HTML 放入 container
+        } // 函式結束
 
-        function allPokemon() {
-            for (let i = 1; i < 898; i++) {
-                // let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png`;                
-                let fileName = i.toString().padStart(3, "0"); // 不足三位數, 前面補"0"
-                let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
-                let img = document.createElement("img");
-                img.setAttribute("src", pathFile);
-                img.addEventListener("click", function (event) {
-                    container.removeChild(event.target);
+        function allPokemon() { // 宣告載入全部寶可夢的函式
+            for (let i = 1; i < 898; i++) { // 使用 for 迴圈從 1 跑到 897
+                let fileName = i.toString().padStart(3, "0"); // 將數字轉成三位數字串（補 0）
+                let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`; // 組合圖片網址
+                let img = document.createElement("img"); // 建立 img 元素
+                img.setAttribute("src", pathFile); // 設定圖片來源
+                img.addEventListener("click", function (event) { // 為圖片加上點擊事件
+                    container.removeChild(event.target); // 點擊圖片時，將該圖片移除
                 });
-                container.append(img)
+                container.append(img); // 將圖片加入 container 中
             }
         }
 
-        function AddPokemon(){
-            //HOMEWORK
-            let pokemon_list = document.querySelectorAll("img");
-            let pokemon_total = pokemon_list.length;
-            let add_one_pokemon = pokemon_total + 1; 
-            add_one_pokemon = add_one_pokemon.toString().padStart(3, "0");
-            let img = document.createElement("img");
-            img.setAttribute("src", `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${add_one_pokemon}.png`);
-            container.appendChild(img);
+        function AddPokemon() { // 宣告新增一隻寶可夢的函式
+            let pokemon_list = document.querySelectorAll("img"); // 取得目前所有 img 元素
+            let pokemon_total = pokemon_list.length; // 計算目前寶可夢的數量
+            let add_one_pokemon = pokemon_total + 1; // 新增一隻，編號加 1
+            add_one_pokemon = add_one_pokemon.toString().padStart(3, "0"); // 補成三位數
+            let img = document.createElement("img"); // 建立 img 元素
+            img.setAttribute(
+                "src",
+                `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${add_one_pokemon}.png`
+            ); // 設定新增寶可夢圖片
+            container.appendChild(img); // 將圖片加入 container
         }
 
-        function removePokemon() {
-            container.removeChild(container.lastChild);
+        function removePokemon() { // 宣告移除寶可夢的函式
+            container.removeChild(container.lastChild); // 移除 container 中最後一個圖片
         }
 
-        function resetPokemon() {
-            container.innerHTML = "";
+        function resetPokemon() { // 宣告重置函式
+            container.innerHTML = ""; // 清空 container 中所有內容
         }
 
+    </script> <!-- JavaScript 程式碼結束 -->
 
+</body> <!-- 網頁內容結束 -->
 
-    </script>
-
-</body>
-
-</html>
+</html> <!-- HTML 文件結束 -->
