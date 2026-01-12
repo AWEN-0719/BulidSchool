@@ -49,7 +49,7 @@
         } // 函式結束
 
         function allPokemon() { // 宣告載入全部寶可夢的函式
-            for (let i = 1; i < 898; i++) { // 使用 for 迴圈從 1 跑到 897
+            for (let i = 1; i < 999; i++) { // 使用 for 迴圈從 1 跑到 999
                 let fileName = i.toString().padStart(3, "0"); // 將數字轉成三位數字串（補 0）
                 let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`; // 組合圖片網址
                 let img = document.createElement("img"); // 建立 img 元素
