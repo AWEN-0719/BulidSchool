@@ -8,7 +8,7 @@
 - 遇到共用內容 → 使用 colspan
 
 ### 熟悉 ```<table>``` 的結構 語意分區
-```
+```html=
 <table>
   <caption></caption>
   <thead></thead>
