@@ -1,54 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <html lang="zh-Hant">
-    
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>文字迭代的資料</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>JavaScript 練習 網路抓寶可夢圖鑑列表與遞增遞減</title>
 
-  <style>
-    html {
-      height: 100%;
-      width: 100%;
-    }
-    body {
-      font-family: Arial; // 設定字體為 Arial
-      margin: 30px; // 設定邊距為 30px
-    }
-    textarea {
-      width: 100%; // 設定寬度為 100%
-      height: 80px; // 設定高度為 80px
-    }
-    .box {
-      margin-top: 20px; // 設定上邊距為 20px
-      padding: 10px; // 設定內邊距為 10px
-      border: 1px solid #999; // 設定邊框為 1px 實線，顏色為 #999
-    }
-  </style>
-  
 </head>
-    
+
 <body>
-  <h2>文字迭代的資料（JavaScript 練習）</h2>
 
-  <p>請輸入一段文字：</p>
-  <textarea id="inputText"></textarea><br><br> // 使用者輸入的文字
-  <button onclick="textIteration()">執行迭代</button> // 執行迭代的按鈕
+    <h1>JavaScript 練習 網路抓寶可夢圖鑑列表與遞增遞減</h1>
 
-  <div class="box" id="charBox"> // 顯示逐字元迭代結果的區塊
-      <strong>逐字元迭代結果：</strong><br> // 顯示逐字元迭代結果的標題
-  </div>
+    <!-- button id 的名稱 使用單引號或雙引號都可以 -->
+    <button id='loadall' onclick="allPokemon()">Load All</button>
+    <button id='addone' onclick="AddPokemon()">Click +1</button>
+    <button id='removeone' onclick="removePokemon()">Click -1</button>
+    <button id='reset' onclick="resetPokemon()">Reset</button>
 
-  <div class="box" id="wordBox"> // 顯示逐單字迭代結果的區塊
-      <strong>逐單字迭代結果：</strong><br> // 顯示逐單字迭代結果的標題
-  </div>
+    <div id="container">
 
-  
- // <script src="script.js"></script> 
-  
+
+
+    </div>
+
+
+    <script>
+        let container;
+        let i = 1;
+        window.onload = function () {
+            container = document.getElementById("container");
+        }
+
+        function appendPokemon() {
+            let img = document.createElement("img");
+            img.setAttribute("src","https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png");
+            container.appendChild(img);
+        }
+
+        function appendPokemonByTemplate() {
+            let fileName = "001";
+            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+            let pokemonImg = `<img src="${pathFile}">`;
+            container.innerHTML = pokemonImg;
+        }
+
+        function allPokemon() {
+            for (let i = 1; i < 898; i++) {
+                // let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png`;                
+                let fileName = i.toString().padStart(3, "0"); // 不足三位數, 前面補"0"
+                let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+                let img = document.createElement("img");
+                img.setAttribute("src", pathFile);
+                img.addEventListener("click", function (event) {
+                    container.removeChild(event.target);
+                });
+                container.append(img)
+            }
+        }
+
+        function AddPokemon(){
+            //HOMEWORK
+            let pokemon_list = document.querySelectorAll("img");
+            let pokemon_total = pokemon_list.length;
+            let add_one_pokemon = pokemon_total + 1; 
+            add_one_pokemon = add_one_pokemon.toString().padStart(3, "0");
+            let img = document.createElement("img");
+            img.setAttribute("src", `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${add_one_pokemon}.png`);
+            container.appendChild(img);
+        }
+
+        function removePokemon() {
+            container.removeChild(container.lastChild);
+        }
+
+        function resetPokemon() {
+            container.innerHTML = "";
+        }
+
+
+
+    </script>
+
 </body>
 
 </html>
