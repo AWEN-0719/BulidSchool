@@ -26,9 +26,8 @@
 - 功能介紹（features）
 - 品牌推薦（brand）
 - 底部區塊的語義 (Footer)
-```
-<! -- html ==!>
 
+```html=
 <section>
     <div class="main">...</div>
 </section>
@@ -46,9 +45,8 @@
 
 ## 版面配置重點（使用 CSS）
 ### 固定導覽列（position: fixed）
-```
-<! -- css ==!>
 
+```css=
 .ad,
 .headerTop,
 .header {
@@ -57,9 +55,8 @@
 }
 ```
 同時在 body 補空間：
-```
-<! -- css ==!>
 
+```css=
 body {
     padding-top: 140px;
 }
@@ -69,17 +66,14 @@ body {
 
 
 ### 使用 Flexbox 排版
-```
-<! -- css ==!>
 
+```css=
 .wrap {
     display: flex;
     justify-content: space-around;
 }
 ```
-```
-<! -- css ==!>
-
+```css=
 .row {
     display: flex;
 }
@@ -91,9 +85,8 @@ Flexbox 很適合做「左右排列」，比 float 好控制、好閱讀
 - ```flex-wrap```
 
 ### 用 CSS 製作交錯圖文版型
-```
-<! -- css ==!>
 
+```css=
 .row:nth-child(2n - 1) {
     flex-direction: row-reverse;
 }
@@ -103,12 +96,13 @@ Flexbox 很適合做「左右排列」，比 float 好控制、好閱讀
 
 ## 視覺與互動細節
 ### hover 效果增加互動感
-```
+
+```css=
 a:hover {
     color: blue;
 }
 ```
-```
+```css=
 .btnTry a:hover {
     opacity: 70%;
 }
@@ -117,17 +111,14 @@ a:hover {
 讓使用者知道「可以點」按鈕、導覽列，都很適合加 hover
 
 ### 表單輸入框樣式調整
-```
-<! -- css ==!>
 
+```css=
 input {
     border: none;
     border-bottom-style: solid;
 }
 ```
-```
-<! -- css ==!>
-
+```css=
 ::placeholder {
     color: white;
 }
@@ -137,9 +128,8 @@ input {
 
 ## 清單與裝飾技巧
 ### 使用 ::before 自訂清單符號
-```
-<! -- css ==!>
 
+```css=
 .list li::before {
     content: "\2714";
     color: blue;
@@ -151,22 +141,17 @@ input {
 
 ## 外部資源使用
 ### reset.css
-```
-<! -- html --!>
 
+```html=
 <link rel="stylesheet" href="../reset.css">
 ```
 為了清除不同瀏覽器的預設樣式差異讓版面結果更一致
 
 ### Font Awesome 圖示
-```
-<! -- html --!>
-
+```html=
 <script src="https://kit.fontawesome.com/..."></script>
 ```
-```
-<! -- html --!>
-
+```html=
 <i class="fa-brands fa-facebook-f"></i>
 ```
 不用自己畫 icon，可用 CSS 控制大小與顏色
