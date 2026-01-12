@@ -7,12 +7,3 @@
 
 
 ---
-
-
-
-<br>[作業12 小瑪莉創意版 - 黑客松 JS自動產出列表 - 隨機選號](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW12/random_selection.html)
-<br>[作業13 Apple iPad 購買頁面  - JavaScript 練習](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW13/index.html)
-<br>[作業14 LOL英雄聯盟圖鑑 - JavaScript 練習 card](https://AWEN-0719.github.io/Practicing_HTML/HomeWork/HW14/index.html)
-
-
-
